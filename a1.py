@@ -14,31 +14,23 @@ check, if you do not complete the generative AI portion of the assignment.
 
 from typing import List, TypeVar
 
-
-def absolute(n: int) -> int:
-    """Gives the absolute value of the passed in number. Cannot use the built in
-    function `abs`.
-
-    Args:
-        n - the number to take the absolute value of
-
-    Returns:
-        the absolute value of the passed in number
-    """
-    raise NotImplementedError("absolute")
+userinput = input("enter a number: ")
+number = float(userinput)
+if number < 0:
+    absolute_value = -number
+if number > 0:
+    absolute_value = number
+print("the absolute value of", number, "is", absolute_value)
 
 
-def factorial(n: int) -> int:
-    """Takes a number n, and computes the factorial n! You can assume the passed in
-    number will be positive
 
-    Args:
-        n - the number to compute factorial of
-
-    Returns:
-        factorial of the passed in number
-    """
-    raise NotImplementedError("factorial")
+userinput = input("enter a number: ")
+number = int(userinput)
+result = 1
+for i in range(1, number + 1):
+    result *= i
+print("the factorial of your number is ", result)
+    
 
 
 T = TypeVar("T")
@@ -55,6 +47,7 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
+    return lst[::2]
     raise NotImplementedError("every_other")
 
 
@@ -71,7 +64,7 @@ def sum_list(lst: List[int]) -> int:
     raise NotImplementedError("sum_list")
 
 
-def mean(lst: List[int]) -> float:
+def sum_list(lst: List[int]) -> int:
     """Takes a list of numbers, and returns the mean of the numbers.
 
     Args:
@@ -80,9 +73,34 @@ def mean(lst: List[int]) -> float:
     Returns:
         the mean of the passed in list
     """
+    s = 0
+    for el in lst:
+        s += el
+    return super
     raise NotImplementedError("mean")
 
 
+def mean(lst: List[int]) -> float:
+    """Takes an ordered list of numbers, and returns the median of the numbers.
+
+    If the list has an even number of values, it computes the mean of the two center
+    values.
+
+    Args:
+        lst - an ordered list of numbers
+
+    Returns:
+        the median of the passed in list
+    """
+    s = sum_list(lst)
+    num_values = len(lst)
+    return s/num_values
+if lst:
+    return s/num_values
+else:
+    return 0
+
+    raise NotImplementedError("mean")
 def median(lst: List[int]) -> float:
     """Takes an ordered list of numbers, and returns the median of the numbers.
 
@@ -95,6 +113,15 @@ def median(lst: List[int]) -> float:
     Returns:
         the median of the passed in list
     """
+    if len(lst) % 2 == 1:
+        print(len(lst)/2)
+        return lst[len(lst)//2]
+    else:
+        in1 = len(lst)/2
+        print(el1)
+        in2 = in1 - 1
+        return (lst[in1] + lst[in2]) /2
+    
     raise NotImplementedError("median")
 
 
