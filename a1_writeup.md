@@ -14,10 +14,11 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 
 1. What is your initial thoughts about the python programming language?
 
-
+I like its simplicity and so far it doesnt really seem much different from java other than having less restrictions. Its like writing in math vs in english the math teacher doesnt care about our grammar.
 
 2. Describe some similarities and differences that you found between python and other programming languages you have used in the past?
 
-
+I think that a lot of the built in functions are very simmilat. indidation is always a good idea regardless of its importance. All programming languages I have used have some of the same basic function. def variables function for loops iterating and all that stuff have been very simmilar
 
 3. What are some things that you learned through this assignment?
+I learned a lot about lists creating functions iterating doing math in the console. Making comments, staying organized, indenting properley. I have already refreshed and learned a lot through this assigment.
